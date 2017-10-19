@@ -1376,34 +1376,34 @@ void chooseOperation(op_t op, message_t msg, int fd){
   #endif
 
   switch(op){
-    case 0:
+    case REGISTER_OP:
     registerUser(msg.hdr.sender,fd);
     break;
-    case 1:
+    case CONNECT_OP:
     connectUser(msg.hdr.sender,fd,msg);
     break;
-    case 2:
+    case POSTTXT_OP:
     postMSG(msg,fd);
     break;
-    case 3:
+    case POSTTXTALL_OP:
     postMSGatAll(msg,fd);
     break;
-    case 4:
+    case POSTFILE_OP:
     postFile(msg,fd);
     break;
-    case 5:
+    case GETFILE_OP:
     getFile(msg,fd);
     break;
-    case 6:
+    case GETPREVMSGS_OP:
     getprevmsg(msg,fd);
     break;
-    case 7:
+    case USRLIST_OP:
     get_connessi(fd,msg.hdr.sender);
     break;
-    case 8:
+    case UNREGISTER_OP:
     deregisterUser(msg.hdr.sender, fd);
     break;
-    case 9:
+    case DISCONNECT_OP:
     disconnectUser(fd);
     break;
     default:{
