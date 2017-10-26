@@ -5,7 +5,7 @@
  * Docenti: Prencipe, Torquati
  *
  * Studente: Luca Corbucci
- * Matricola: 516450
+ * Matricola:
  *
  */
 
