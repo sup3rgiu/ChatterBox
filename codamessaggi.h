@@ -8,7 +8,7 @@
  * opera originale dello studente.
  *
  * Studente: Luca Corbucci
- * Matricola: 516450
+ * Matricola:
  *
  */
 
